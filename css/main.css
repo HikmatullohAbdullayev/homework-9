@@ -1,54 +1,442 @@
 @font-face {
-    font-family: 'Hind Madurai';
-    src: url('../font/HindMadurai-Bold.woff2') format('woff2'),
-        url('../font/HindMadurai-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hind Madurai";
+  src: url("../font/HindMadurai-Bold.woff2") format("woff2"),
+    url("../font/HindMadurai-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Hind Madurai';
-    src: url('../font/HindMadurai-Medium.woff2') format('woff2'),
-        url('../font/HindMadurai-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hind Madurai";
+  src: url("../font/HindMadurai-Medium.woff2") format("woff2"),
+    url("../font/HindMadurai-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Hind Madurai';
-    src: url('../font/HindMadurai-Light.woff2') format('woff2'),
-        url('../font/HindMadurai-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hind Madurai";
+  src: url("../font/HindMadurai-Light.woff2") format("woff2"),
+    url("../font/HindMadurai-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Hind Madurai';
-    src: url('../font/HindMadurai-SemiBold.woff2') format('woff2'),
-        url('../font/HindMadurai-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hind Madurai";
+  src: url("../font/HindMadurai-SemiBold.woff2") format("woff2"),
+    url("../font/HindMadurai-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Hind Madurai';
-    src: url('../font/HindMadurai-Regular.woff2') format('woff2'),
-        url('../font/HindMadurai-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Hind Madurai";
+  src: url("../font/HindMadurai-Regular.woff2") format("woff2"),
+    url("../font/HindMadurai-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Fredoka';
-    src: url('../font/Fredoka-Light.woff2') format('woff2'),
-        url('../font/Fredoka-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Fredoka One";
+  src: url("../font/FredokaOne-Regular.woff2") format("woff2"),
+    url("../font/FredokaOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Medium.woff2") format("woff2"),
+    url("../font/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.woff2") format("woff2"),
+    url("../font/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  max-width: 1125px;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+.btn_1 {
+  font-family: "Hind Madurai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 50px;
+  background-color: #d23166;
+  border-radius: 5px;
+  color: #fafafa;
+}
+.btn_2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #fafafa;
+
+  padding: 14px 50px;
+  background-color: #d23166;
+  border-radius: 5px;
+}
+.btn_2:hover{
+    background-color: #b6154b;
+}
+.btn_1:hover{
+    background-color: #b6154b;
+}
+
+
+/* <!-- =====HEADER-START===== --> */
+#header {
+  background-color: #fbf0f4;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_link {
+  padding-top: 10px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_list-item {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 40px;
+}
+
+.nav_list-item:last-child {
+  margin-left: 172px;
+}
+
+.nav_link {
+  color: #8a7c7d;
+}
+.active {
+  color: #d23166;
+}
+.btn_1 {
+  font-family: "Hind Madurai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 50px;
+  background-color: #d23166;
+  border-radius: 5px;
+  color: #fafafa;
+}
+
+/* <!-- =====HEADER-END===== --> */
+
+/* <!-- =====MAIN-START===== --> */
+
+/* <!-- =====HERO-START===== --> */
+#hero {
+  background-color: #fbf0f4;
+}
+.container_hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_content {
+  max-width: 658px;
+}
+.hero_mini-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: -10px;
+  color: #0f0101;
+}
+.hero_title {
+  font-family: "Fredoka One";
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  padding-bottom: 35px;
+
+  color: #0f0101;
+
+  opacity: 0.9;
+}
+.hero_span {
+  color: #d23166;
+}
+.hero_text {
+  max-width: 517px;
+  font-family: "Hind Madurai";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 63px;
+
+  color: #0f0101;
+
+  opacity: 0.6;
+}
+.hero_image {
+  padding-bottom: 128px;
+  padding-top: 106px;
+}
+/* <!-- =====HERO-END===== --> */
+/* <!-- =====SERVICE-START===== --> */
+
+#service {
+  padding: 100px 0;
+}
+
+.container_service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service_list {
+  max-width: 250px;
+  text-align: center;
+  background: #FFFFFF;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+border-radius: 7px;
+}
+
+.service_title {
+  font-family: "Hind Madurai";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  color: #000000;
+}
+.service_text {
+  font-family: "Hind Madurai";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  opacity: 0.6;
+  color: #000000;
+}
+.service_item {
+  padding: 0 26px;
+}
+/* <!-- =====SERVICE-END===== --> */
+/* <!-- =====INFO-START===== --> */
+#info{
+    background-color: #fbf0f4;
+}
+.container_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_content{
+    max-width: 442px;
+}
+.info_title{
+    font-family: 'Hind Madurai';
+font-weight: 600;
+font-size: 44.2px;
+line-height: 49px;
+margin-bottom: 16px;
+color: #150101;
+}
+.info_text{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 50px;
+
+color: #150101;
+
+opacity: 0.6;
+}
+.info_image{
+    margin-right: -20px;
+}
+/* <!-- =====INFO-END===== --> */
+/* <!-- =====PRODUCT-START===== --> */
+#product{
+    padding-top: 137px;
+
+}
+.container_product{
+
+}
+.titles{
+    text-align: center;
+    font-family: 'Hind Madurai';
+font-weight: 600;
+font-size: 44.2px;
+line-height: 61px;
+
+
+color: #150101;
+}
+.product_list{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 890px;
+    margin: 64px auto 50px auto;
+}
+.product_item{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+opacity: 0.5;
+color: #000000;
+
+}
+.product_item:hover{
+ opacity: 1; 
+  cursor: pointer;
+}
+.product_item:hover .line_span {
+   
+    visibility: visible;
+  
+
+}
+.product_line-list{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 890px;
+    margin: auto;
+}
+.line_span{
+    display: block;
+    width:100%;
+    padding: 2px;
+    background-color:#d23166;
+    visibility: hidden;
+    
+}
+/* <!-- =product-menu= --> */
+.product_block{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row-reverse;
+}
+.product_content{
+    max-width: 454px ;
+
+}
+.product_title{
+    font-family: 'Hind Madurai';
+font-weight: 700;
+font-size: 26px;
+line-height: 36px;
+
+
+color: #000000;
+    margin-bottom: 11px;
+}
+.product_text{
+    margin-bottom: 28px;
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #000000;
+
+opacity: 0.7;
+}
+.product_text:hover{
+    opacity: 1;
+}
+.product_image{
+    filter: blur(4px);
+    margin-top: 50px;
+    
+}
+.product_image:hover{
+    filter: blur(0px);
+}
+.product_pricing{
+    font-family: 'Hind Madurai';
+font-weight: 500;
+font-size: 26px;
+line-height: 36px;
+margin-bottom: 31px;
+color: #000000;
+}
+.product_span{
+    font-family: 'Hind Madurai';
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+text-decoration-line: line-through;
+
+color: #000000;
+
+opacity: 0.7;
+}
+/* <!-- =product-menu= --> */
+/* <!-- =product-comment= --> */
+
+#comment{
+ display: flex;
+ justify-content: space-between;
+ align-items:center;
+}
+
+.comment_left{
+    max-width: 322px;
+    
+}
